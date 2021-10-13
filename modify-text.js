@@ -21,4 +21,4 @@ function removeEnd(index, file) {
     return file.substring(0, startIndex) + file.substring(endIndex);
 }
 
-export { run, removeHead, removeEnd };
+export { run };

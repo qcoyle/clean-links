@@ -1,4 +1,4 @@
-import { run, removeHead, removeEnd } from './modify-text.js';
+import { run } from './modify-text.js';
 
 const inputElement = document.getElementById("input"); // Object for HTML input element
 inputElement.addEventListener("change", handleFiles, false); // Do this once input is clicked
