@@ -8,7 +8,7 @@ function handleFiles() {
 
     for (let i = 0, numFiles = fileList.length; i < numFiles; i++) {
         const file = fileList[i];
-        file.text().then(data => download("cleaned-links-index.html", run(data, "https://www.google.com/url?q=")));
+        file.text().then(data => download("index.html", run(data, "https://www.google.com/url?q=")));
     }
 }
 
