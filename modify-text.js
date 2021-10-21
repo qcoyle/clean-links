@@ -1,4 +1,6 @@
 function run(file, flag) {
+    file = addContent(file, "</head>", "<link href='../default-notes-styles.css' rel='stylesheet'>");
+
     var startIndex = 0,
         index;
 
@@ -8,6 +10,12 @@ function run(file, flag) {
     }
 
     return file;
+}
+
+function addContent(file, flag, content) {
+    let index = file.indexOf(flag);
+    console.log(index);
+    return (file.substr(0, index) + content + file.substr(index));
 }
 
 function removeHead(index, file, flag) {
