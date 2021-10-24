@@ -1,5 +1,5 @@
 function run(file, flag) {
-    file = addContent(file, "</head>", "<link href='../default-notes-styles.css' rel='stylesheet'><link rel='shortcut icon' href='/static/favicon.png' type='image/x-icon' />");
+    file = addContent(file, "</head>", "<link href='/static/default-writing-styles.css' rel='stylesheet'><link rel='shortcut icon' href='/static/favicon.png' type='image/x-icon' />");
 
     var startIndex = 0,
         index;
